@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
-signal coin_collected
 
+@export var player_id = 1
 @export_subgroup("Components")
 @export var view: Node3D
 
@@ -18,22 +18,32 @@ var previously_floored = false
 var jump_single = true
 var jump_double = true
 
-var coins = 0
-
 @onready var particles_trail = $ParticlesTrail
 @onready var sound_footsteps = $SoundFootsteps
 @onready var model = $Character
 @onready var animation = $Character/AnimationPlayer
 
 # Functions
+var action_left = ""
+var action_right = ""
+var action_up = ""
+var action_down = ""
+var action_jump = ""
 
+func _ready():
+	print("👉 Player ID is set to: ", player_id)
+	# Construct the input names ONCE when the game starts
+	action_left = "p%s_left" % player_id     # e.g. "p1_left"
+	action_right = "p%s_right" % player_id   # e.g. "p1_right"
+	action_up = "p%s_up" % player_id         # e.g. "p1_up" (Ensure Input Map matches!)
+	action_down = "p%s_down" % player_id     # e.g. "p1_down"
+	action_jump = "p%s_jump" % player_id 
+	
 func _physics_process(delta):
 
 	# Handle functions
-
 	handle_controls(delta)
 	handle_gravity(delta)
-
 	handle_effects(delta)
 
 	# Movement
@@ -110,8 +120,8 @@ func handle_controls(delta):
 
 	var input := Vector3.ZERO
 
-	input.x = Input.get_axis("move_left", "move_right")
-	input.z = Input.get_axis("move_forward", "move_back")
+	input.x = Input.get_axis(action_left, action_right)
+	input.z = Input.get_axis(action_up, action_down)
 
 	input = input.rotated(Vector3.UP, view.rotation.y)
 
@@ -122,7 +132,7 @@ func handle_controls(delta):
 
 	# Jumping
 
-	if Input.is_action_just_pressed("jump"):
+	if Input.is_action_just_pressed(action_jump):
 
 		if jump_single or jump_double:
 			jump()
@@ -153,11 +163,3 @@ func jump():
 		jump_double = true;
 	else:
 		jump_double = false;
-
-# Collecting coins
-
-func collect_coin():
-
-	coins += 1
-
-	coin_collected.emit(coins)
