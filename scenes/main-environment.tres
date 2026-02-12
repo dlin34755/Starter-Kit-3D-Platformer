@@ -1,17 +1,16 @@
-[gd_resource type="Environment" load_steps=4 format=3 uid="uid://bqnqgflivjvue"]
+[gd_resource type="Environment" load_steps=3 format=3 uid="uid://bqnqgflivjvue"]
 
-[ext_resource type="Texture2D" uid="uid://cb7sdk1i5rx04" path="res://sprites/skybox.png" id="1_u3n42"]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3vlvf"]
+sky_top_color = Color(0.2627451, 0.5686275, 0.80784315, 1)
+sky_horizon_color = Color(0.86996704, 0.873534, 0.88066304, 1)
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_cme76"]
-panorama = ExtResource("1_u3n42")
-
-[sub_resource type="Sky" id="Sky_7bk1c"]
-sky_material = SubResource("PanoramaSkyMaterial_cme76")
+[sub_resource type="Sky" id="Sky_u3n42"]
+sky_material = SubResource("ProceduralSkyMaterial_3vlvf")
 
 [resource]
 background_mode = 2
 background_color = Color(0.752941, 0.776471, 0.827451, 1)
-sky = SubResource("Sky_7bk1c")
+sky = SubResource("Sky_u3n42")
 ambient_light_source = 2
 ambient_light_color = Color(0.80999845, 0.843779, 0.9999983, 1)
 tonemap_mode = 2
