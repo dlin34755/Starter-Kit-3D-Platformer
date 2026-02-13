@@ -79,7 +79,7 @@ func handle_team_paddle(delta):
 	current_speed = move_toward(current_speed, 0, friction * delta)
 
 	# D. MOVE FORWARD
-	var forward_dir = -transform.basis.z
+	var forward_dir = -transform.basis.x
 	velocity.x = forward_dir.x * current_speed
 	velocity.z = forward_dir.z * current_speed
 
@@ -101,7 +101,7 @@ func mount_p1():
 	p1_ref.set_physics_process(false)
 	p1_ref.reparent(seat_p1)
 	p1_ref.position = Vector3.ZERO
-	p1_ref.rotation_degrees = Vector3(0, 180, 0) # Face forward
+	p1_ref.rotation_degrees = Vector3(0, -90, 0) # Face forward
 
 func dismount_p1():
 	p1_on_board = false
@@ -115,7 +115,7 @@ func mount_p2():
 	p2_ref.set_physics_process(false)
 	p2_ref.reparent(seat_p2)
 	p2_ref.position = Vector3.ZERO
-	p2_ref.rotation_degrees = Vector3(0, 180, 0) # Face forward
+	p2_ref.rotation_degrees = Vector3(0, -90, 0) # Face forward
 
 func dismount_p2():
 	p2_on_board = false

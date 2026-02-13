@@ -6,7 +6,7 @@ extends Camera3D
 @export var player2_path: NodePath
 
 # --- SETTINGS ---
-@export var offset = Vector3(0, 0, 3)  # Normal height/distance
+@export var offset = Vector3(0, 6, 0)  # Normal height/distance
 @export var smooth_speed = 10.0
 @export var lock_x_axis = false         # Set TRUE if you want the camera to stay centered on the lane
 
@@ -67,7 +67,6 @@ func _physics_process(delta):
 	new_pos.z = target_cam_pos.z 
 	
 	global_position = new_pos
-	
 	# 7. LOOK AT TARGET
 	var look_target = center_pos
 	if lock_x_axis: look_target.x = 0

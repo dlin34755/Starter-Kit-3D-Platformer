@@ -1,10 +1,10 @@
-[gd_scene load_steps=30 format=3 uid="uid://cm1pqfwqsrucj"]
+[gd_scene load_steps=34 format=3 uid="uid://cm1pqfwqsrucj"]
 
 [ext_resource type="PackedScene" uid="uid://cmyewxp8f0foh" path="res://models/buildings/GLB format/building-type-a.glb" id="1_gm1o3"]
+[ext_resource type="Script" uid="uid://bcg2kkbsnttec" path="res://scripts/view.gd" id="2_htguo"]
 [ext_resource type="PackedScene" uid="uid://c0wasgei7r3kh" path="res://scenes/unicycle.tscn" id="2_om50d"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_vw27r"]
 [ext_resource type="Script" uid="uid://b827uyc3nib0x" path="res://scripts/camera.gd" id="3_htguo"]
-[ext_resource type="Script" uid="uid://bcg2kkbsnttec" path="res://scripts/view.gd" id="3_w1r0r"]
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="4_vw27r"]
 [ext_resource type="PackedScene" uid="uid://dl4ldrg7l5doo" path="res://models/buildings/GLB format/building-type-b.glb" id="5_ud5na"]
 [ext_resource type="PackedScene" uid="uid://bqhnkwwwalf52" path="res://models/buildings/GLB format/building-type-c.glb" id="6_ov8bm"]
@@ -17,6 +17,10 @@
 [ext_resource type="PackedScene" uid="uid://fg3soly867bp" path="res://models/buildings/GLB format/building-type-i.glb" id="12_4lcj3"]
 [ext_resource type="PackedScene" uid="uid://dnd0nl3a1uf1k" path="res://models/buildings/GLB format/building-type-j.glb" id="13_p0d5o"]
 [ext_resource type="PackedScene" uid="uid://de7tt1prgm4m3" path="res://models/buildings/GLB format/building-type-k.glb" id="14_bmwg6"]
+[ext_resource type="PackedScene" uid="uid://wloqex0drxcu" path="res://models/packages/box-large.glb" id="18_quxi6"]
+[ext_resource type="PackedScene" uid="uid://dqbs1pr8cawut" path="res://models/packages/box-long.glb" id="19_xsack"]
+[ext_resource type="PackedScene" uid="uid://d0i6pu8hlq7lq" path="res://models/packages/box-small.glb" id="20_w0282"]
+[ext_resource type="PackedScene" uid="uid://b0ixttpwg86u4" path="res://models/packages/box-wide.glb" id="21_ys0pm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jnrv6"]
 albedo_color = Color(0.15294118, 0.68235296, 0.3764706, 1)
@@ -83,18 +87,20 @@ transform = Transform3D(0.70710695, 0.70710695, 0, -0.70710695, 0.70710695, 0, 0
 transform = Transform3D(0.70710695, -0.70710695, 0, 0.70710695, 0.70710695, 0, 0, 0, 1, -0.3, 0.1195, 0)
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target")]
-transform = Transform3D(1.0000002, 0, 0, 0, 0.49999997, 0.8660249, 0, -0.86602545, 0.49999967, 0, 0, 0)
-script = ExtResource("3_w1r0r")
+transform = Transform3D(1.0000002, 0, 0, 0, 1, 0, 0, 0, 0.9999994, 0, 0, 0)
+script = ExtResource("2_htguo")
 target = NodePath("../Player1")
 
 [node name="Camera" type="Camera3D" parent="View" groups=["camera"]]
-transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 30, 10)
+transform = Transform3D(0.99999994, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 0, 30, 0)
+keep_aspect = 0
 current = true
 fov = 60.0
 size = 10.0
 script = ExtResource("3_htguo")
 player1_path = NodePath("../../Player1")
 player2_path = NodePath("../../Player2")
+offset = Vector3(0, 50, 0)
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
@@ -265,7 +271,7 @@ transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, -49)
 
 [node name="Wheels" parent="." instance=ExtResource("2_om50d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8405359, 1.1471155, 3.2660484)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.8405359, 1.1471155, 3.2660484)
 
 [node name="Player2" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_vw27r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 0)
@@ -286,6 +292,41 @@ transform = Transform3D(0.70710695, 0.70710695, 0, -0.70710695, 0.70710695, 0, 0
 
 [node name="arm-right" parent="Player2/Character/character/root/torso" index="1"]
 transform = Transform3D(0.70710695, -0.70710695, 0, 0.70710695, 0.70710695, 0, 0, 0, 1, -0.3, 0.1195, 0)
+
+[node name="Packages" type="Node3D" parent="."]
+
+[node name="box-large2" parent="Packages" instance=ExtResource("18_quxi6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.179348, 0.10000038, -1.8949068)
+
+[node name="box-long2" parent="Packages" instance=ExtResource("19_xsack")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7489398, 0.10000038, 8.31275)
+
+[node name="box-small2" parent="Packages" instance=ExtResource("20_w0282")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.567187, 0.099999905, -16.168198)
+
+[node name="box-wide2" parent="Packages" instance=ExtResource("21_ys0pm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2837293, 0.10000038, -7.792226)
+
+[node name="box-large3" parent="Packages" instance=ExtResource("18_quxi6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.319503, 0.20000076, 7.734769)
+
+[node name="box-long3" parent="Packages" instance=ExtResource("19_xsack")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.746193, 0.20000076, 0.520524)
+
+[node name="box-small3" parent="Packages" instance=ExtResource("20_w0282")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8863616, 0.20000029, -7.8113194)
+
+[node name="box-wide3" parent="Packages" instance=ExtResource("21_ys0pm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.194773, 0.20000076, -17.81591)
+
+[node name="box-wide4" parent="Packages" instance=ExtResource("21_ys0pm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.338871, 0.099998474, 17.695963)
+
+[node name="box-small4" parent="Packages" instance=ExtResource("20_w0282")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2888268, 0.10000038, 16.743622)
+
+[node name="box-large4" parent="Packages" instance=ExtResource("18_quxi6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9489794, 0.099999905, 25.260218)
 
 [editable path="Player1"]
 [editable path="Player1/Character"]
