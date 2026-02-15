@@ -1,26 +1,26 @@
-[gd_scene load_steps=34 format=3 uid="uid://cm1pqfwqsrucj"]
+[gd_scene load_steps=34 format=3 uid="uid://c23b0o1qtiq78"]
 
-[ext_resource type="PackedScene" uid="uid://cmyewxp8f0foh" path="res://models/buildings/GLB format/building-type-a.glb" id="1_gm1o3"]
-[ext_resource type="Script" uid="uid://bcg2kkbsnttec" path="res://scripts/view.gd" id="2_htguo"]
-[ext_resource type="PackedScene" uid="uid://c0wasgei7r3kh" path="res://scenes/unicycle.tscn" id="2_om50d"]
-[ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_vw27r"]
-[ext_resource type="Script" uid="uid://b827uyc3nib0x" path="res://scripts/camera2player.gd" id="3_htguo"]
-[ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="4_vw27r"]
-[ext_resource type="PackedScene" uid="uid://dl4ldrg7l5doo" path="res://models/buildings/GLB format/building-type-b.glb" id="5_ud5na"]
-[ext_resource type="PackedScene" uid="uid://bqhnkwwwalf52" path="res://models/buildings/GLB format/building-type-c.glb" id="6_ov8bm"]
-[ext_resource type="PackedScene" uid="uid://dthdvrp3v5eoh" path="res://models/buildings/GLB format/building-type-d.glb" id="7_jnrv6"]
-[ext_resource type="PackedScene" uid="uid://bw3jfb2gxke1j" path="res://models/buildings/GLB format/building-type-e.glb" id="8_my2u5"]
-[ext_resource type="PackedScene" uid="uid://dhbo20n8id7iu" path="res://models/buildings/GLB format/building-type-f.glb" id="9_4nccn"]
-[ext_resource type="PackedScene" uid="uid://c86wutgmqtf2e" path="res://models/roads/GLB format/road-straight.glb" id="9_ov8bm"]
-[ext_resource type="PackedScene" uid="uid://bcbsijxna2gn1" path="res://models/buildings/GLB format/building-type-g.glb" id="10_om50d"]
-[ext_resource type="PackedScene" uid="uid://qmpwjr2fxyna" path="res://models/buildings/GLB format/building-type-h.glb" id="11_htguo"]
-[ext_resource type="PackedScene" uid="uid://fg3soly867bp" path="res://models/buildings/GLB format/building-type-i.glb" id="12_4lcj3"]
-[ext_resource type="PackedScene" uid="uid://dnd0nl3a1uf1k" path="res://models/buildings/GLB format/building-type-j.glb" id="13_p0d5o"]
-[ext_resource type="PackedScene" uid="uid://de7tt1prgm4m3" path="res://models/buildings/GLB format/building-type-k.glb" id="14_bmwg6"]
-[ext_resource type="PackedScene" uid="uid://wloqex0drxcu" path="res://models/packages/box-large.glb" id="18_quxi6"]
-[ext_resource type="PackedScene" uid="uid://dqbs1pr8cawut" path="res://models/packages/box-long.glb" id="19_xsack"]
-[ext_resource type="PackedScene" uid="uid://d0i6pu8hlq7lq" path="res://models/packages/box-small.glb" id="20_w0282"]
-[ext_resource type="PackedScene" uid="uid://b0ixttpwg86u4" path="res://models/packages/box-wide.glb" id="21_ys0pm"]
+[ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="1_46e5v"]
+[ext_resource type="Script" uid="uid://bcg2kkbsnttec" path="res://scripts/view.gd" id="2_mck4v"]
+[ext_resource type="Script" uid="uid://ctjsjjisddjct" path="res://scenes/cameraisland.gd" id="3_bt24j"]
+[ext_resource type="PackedScene" uid="uid://c7v5wq7xymqus" path="res://scenes/truck.tscn" id="4_46e5v"]
+[ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="4_dmskf"]
+[ext_resource type="PackedScene" uid="uid://cmyewxp8f0foh" path="res://models/buildings/GLB format/building-type-a.glb" id="5_pm2n3"]
+[ext_resource type="PackedScene" uid="uid://dl4ldrg7l5doo" path="res://models/buildings/GLB format/building-type-b.glb" id="6_bjyj8"]
+[ext_resource type="PackedScene" uid="uid://bqhnkwwwalf52" path="res://models/buildings/GLB format/building-type-c.glb" id="7_p58o6"]
+[ext_resource type="PackedScene" uid="uid://dthdvrp3v5eoh" path="res://models/buildings/GLB format/building-type-d.glb" id="8_letv3"]
+[ext_resource type="PackedScene" uid="uid://bw3jfb2gxke1j" path="res://models/buildings/GLB format/building-type-e.glb" id="9_wuh8h"]
+[ext_resource type="PackedScene" uid="uid://dhbo20n8id7iu" path="res://models/buildings/GLB format/building-type-f.glb" id="10_5gys5"]
+[ext_resource type="PackedScene" uid="uid://bcbsijxna2gn1" path="res://models/buildings/GLB format/building-type-g.glb" id="11_wqw6r"]
+[ext_resource type="PackedScene" uid="uid://qmpwjr2fxyna" path="res://models/buildings/GLB format/building-type-h.glb" id="12_l4n00"]
+[ext_resource type="PackedScene" uid="uid://fg3soly867bp" path="res://models/buildings/GLB format/building-type-i.glb" id="13_vtftr"]
+[ext_resource type="PackedScene" uid="uid://dnd0nl3a1uf1k" path="res://models/buildings/GLB format/building-type-j.glb" id="14_0b7cx"]
+[ext_resource type="PackedScene" uid="uid://de7tt1prgm4m3" path="res://models/buildings/GLB format/building-type-k.glb" id="15_udxv3"]
+[ext_resource type="PackedScene" uid="uid://c86wutgmqtf2e" path="res://models/roads/GLB format/road-straight.glb" id="16_unq23"]
+[ext_resource type="PackedScene" uid="uid://wloqex0drxcu" path="res://models/packages/box-large.glb" id="18_i635o"]
+[ext_resource type="PackedScene" uid="uid://dqbs1pr8cawut" path="res://models/packages/box-long.glb" id="19_wuelk"]
+[ext_resource type="PackedScene" uid="uid://d0i6pu8hlq7lq" path="res://models/packages/box-small.glb" id="20_vkja5"]
+[ext_resource type="PackedScene" uid="uid://b0ixttpwg86u4" path="res://models/packages/box-wide.glb" id="21_cascp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jnrv6"]
 albedo_color = Color(0.15294118, 0.68235296, 0.3764706, 1)
@@ -61,35 +61,35 @@ data = PackedVector3Array(0.33069998, 0.9532, 0.2835, 0.3159, 0.9237, 0.2835, 0.
 [node name="Level_Neighborhood" type="Node3D"]
 
 [node name="Lawn" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2715454, 0, -12.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.272, -0.5, -12.5)
 use_collision = true
-size = Vector3(39.45691, 0.2, 107)
+size = Vector3(39.457, 1, 107)
 material = SubResource("StandardMaterial3D_jnrv6")
 metadata/_edit_lock_ = true
 
-[node name="Player1" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_vw27r")]
+[node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("1_46e5v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1, 0)
 view = NodePath("../View")
 
-[node name="leg-left" parent="Player1/Character/character/root" index="0"]
+[node name="leg-left" parent="Player/Character/character/root" index="0"]
 transform = Transform3D(0.96592593, 0, 0.2588191, 0, 1, 0, -0.2588191, 0, 0.96592593, 0.125, 0.17625, -0.02375)
 
-[node name="leg-right" parent="Player1/Character/character/root" index="1"]
+[node name="leg-right" parent="Player/Character/character/root" index="1"]
 transform = Transform3D(0.96592593, 0, -0.2588191, 0, 1, 0, 0.2588191, 0, 0.96592593, -0.125, 0.17625, -0.023750002)
 
-[node name="torso" parent="Player1/Character/character/root" index="2"]
+[node name="torso" parent="Player/Character/character/root" index="2"]
 transform = Transform3D(1, 0, 0, 0, 0.996194, 0.08715568, 0, -0.08715568, 0.996194, -1.80478e-15, 0.17625, -0.02375)
 
-[node name="arm-left" parent="Player1/Character/character/root/torso" index="0"]
+[node name="arm-left" parent="Player/Character/character/root/torso" index="0"]
 transform = Transform3D(0.70710695, 0.70710695, 0, -0.70710695, 0.70710695, 0, 0, 0, 1, 0.3, 0.175, 0)
 
-[node name="arm-right" parent="Player1/Character/character/root/torso" index="1"]
+[node name="arm-right" parent="Player/Character/character/root/torso" index="1"]
 transform = Transform3D(0.70710695, -0.70710695, 0, 0.70710695, 0.70710695, 0, 0, 0, 1, -0.3, 0.1195, 0)
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target")]
-transform = Transform3D(1.0000002, 0, 0, 0, 1, 0, 0, 0, 0.9999994, 0, 0, 0)
-script = ExtResource("2_htguo")
-target = NodePath("../Player1")
+transform = Transform3D(1.0000002, 0, 0, 0, 1, 0, 0, 0, 0.9999994, -3, 5, 0)
+script = ExtResource("2_mck4v")
+target = NodePath("../Player")
 
 [node name="Camera" type="Camera3D" parent="View" groups=["camera"]]
 transform = Transform3D(0.99999994, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 0, 30, 0)
@@ -97,10 +97,8 @@ keep_aspect = 0
 current = true
 fov = 60.0
 size = 10.0
-script = ExtResource("3_htguo")
-player1_path = NodePath("../../Player1")
-player2_path = NodePath("../../Player2")
-offset = Vector3(0, 50, 0)
+script = ExtResource("3_bt24j")
+target_path = NodePath("../../Player")
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
@@ -108,13 +106,14 @@ shadow_enabled = true
 shadow_opacity = 0.75
 
 [node name="Environment" type="WorldEnvironment" parent="."]
-environment = ExtResource("4_vw27r")
+environment = ExtResource("4_dmskf")
 
 [node name="World" type="Node3D" parent="."]
 
 [node name="Houses" type="Node3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 0)
 
-[node name="building-type-a2" parent="World/Houses" instance=ExtResource("1_gm1o3")]
+[node name="building-type-a2" parent="World/Houses" instance=ExtResource("5_pm2n3")]
 transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, -24.452255, 0.2, -13.744984)
 
 [node name="building-type-a" parent="World/Houses/building-type-a2" index="0"]
@@ -125,7 +124,7 @@ transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 2.78
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Houses/building-type-a2/building-type-a/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_e008j")
 
-[node name="building-type-b2" parent="World/Houses" instance=ExtResource("5_ud5na")]
+[node name="building-type-b2" parent="World/Houses" instance=ExtResource("6_bjyj8")]
 transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, -11, 0.2, -9)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="World/Houses/building-type-b2/building-type-b" index="0"]
@@ -133,7 +132,7 @@ transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, -1
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Houses/building-type-b2/building-type-b/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ud5na")
 
-[node name="building-type-c2" parent="World/Houses" instance=ExtResource("6_ov8bm")]
+[node name="building-type-c2" parent="World/Houses" instance=ExtResource("7_p58o6")]
 transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, -11, 0.2, 8)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="World/Houses/building-type-c2/building-type-c" index="0"]
@@ -141,7 +140,7 @@ transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, -1
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Houses/building-type-c2/building-type-c/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ov8bm")
 
-[node name="building-type-d2" parent="World/Houses" instance=ExtResource("7_jnrv6")]
+[node name="building-type-d2" parent="World/Houses" instance=ExtResource("8_letv3")]
 transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, -11, 0.2, 17)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="World/Houses/building-type-d2/building-type-d" index="0"]
@@ -149,7 +148,7 @@ transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, -1
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Houses/building-type-d2/building-type-d/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_jnrv6")
 
-[node name="building-type-e2" parent="World/Houses" instance=ExtResource("8_my2u5")]
+[node name="building-type-e2" parent="World/Houses" instance=ExtResource("9_wuh8h")]
 transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, -11, 0.2, -18)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="World/Houses/building-type-e2/building-type-e" index="0"]
@@ -157,7 +156,7 @@ transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, -1
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Houses/building-type-e2/building-type-e/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_my2u5")
 
-[node name="building-type-f2" parent="World/Houses" instance=ExtResource("9_4nccn")]
+[node name="building-type-f2" parent="World/Houses" instance=ExtResource("10_5gys5")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, 5, 0, 15)
 
 [node name="building-type-f" parent="World/Houses/building-type-f2" index="0"]
@@ -168,7 +167,7 @@ transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, -0.4
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Houses/building-type-f2/building-type-f/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_quxi6")
 
-[node name="building-type-g2" parent="World/Houses" instance=ExtResource("10_om50d")]
+[node name="building-type-g2" parent="World/Houses" instance=ExtResource("11_wqw6r")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, 4, 0, 6)
 
 [node name="building-type-g" parent="World/Houses/building-type-g2" index="0"]
@@ -179,7 +178,7 @@ transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, -0.3
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Houses/building-type-g2/building-type-g/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xsack")
 
-[node name="building-type-h2" parent="World/Houses" instance=ExtResource("11_htguo")]
+[node name="building-type-h2" parent="World/Houses" instance=ExtResource("12_l4n00")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, 4, 0, 25)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="World/Houses/building-type-h2/building-type-h" index="0"]
@@ -187,7 +186,7 @@ transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, 4,
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Houses/building-type-h2/building-type-h/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w0282")
 
-[node name="building-type-i2" parent="World/Houses" instance=ExtResource("12_4lcj3")]
+[node name="building-type-i2" parent="World/Houses" instance=ExtResource("13_vtftr")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, 5, 0, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="World/Houses/building-type-i2/building-type-i" index="0"]
@@ -195,7 +194,7 @@ transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, 5,
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Houses/building-type-i2/building-type-i/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ys0pm")
 
-[node name="building-type-j2" parent="World/Houses" instance=ExtResource("13_p0d5o")]
+[node name="building-type-j2" parent="World/Houses" instance=ExtResource("14_0b7cx")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, 5, 0, -8)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="World/Houses/building-type-j2/building-type-j" index="0"]
@@ -203,7 +202,7 @@ transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, 5,
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Houses/building-type-j2/building-type-j/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_07rjj")
 
-[node name="building-type-k2" parent="World/Houses" instance=ExtResource("14_bmwg6")]
+[node name="building-type-k2" parent="World/Houses" instance=ExtResource("15_udxv3")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, 0, 0, -18)
 
 [node name="building-type-k" parent="World/Houses/building-type-k2" index="0"]
@@ -215,122 +214,103 @@ transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, -0.2
 shape = SubResource("ConcavePolygonShape3D_4nccn")
 
 [node name="Roads" type="Node3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+visible = false
 
-[node name="road-straight2" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight2" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, 16)
 
-[node name="road-straight3" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight3" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, 11)
 
-[node name="road-straight4" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight4" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, 6)
 
-[node name="road-straight5" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight5" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, 1)
 
-[node name="road-straight6" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight6" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, -4)
 
-[node name="road-straight7" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight7" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, -9)
 
-[node name="road-straight8" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight8" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, 21)
 
-[node name="road-straight9" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight9" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, -14)
 
-[node name="road-straight10" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight10" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, -19)
 
-[node name="road-straight11" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight11" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, 26)
 
-[node name="road-straight12" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight12" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, 31)
 
-[node name="road-straight13" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight13" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, 36)
 
-[node name="road-straight14" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight14" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, -24)
 
-[node name="road-straight15" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight15" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, -29)
 
-[node name="road-straight16" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight16" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, -34)
 
-[node name="road-straight17" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight17" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, -39)
 
-[node name="road-straight18" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight18" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, -44)
 
-[node name="road-straight19" parent="World/Roads" instance=ExtResource("9_ov8bm")]
+[node name="road-straight19" parent="World/Roads" instance=ExtResource("16_unq23")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, -4, 0.1, -49)
-
-[node name="Wheels" parent="." instance=ExtResource("2_om50d")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.8405359, 1.1471155, 3.2660484)
-
-[node name="Player2" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_vw27r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 0)
-visible = false
-player_id = 2
-view = NodePath("../View")
-
-[node name="leg-left" parent="Player2/Character/character/root" index="0"]
-transform = Transform3D(0.96592593, 0, 0.2588191, 0, 1, 0, -0.2588191, 0, 0.96592593, 0.125, 0.17625, -0.02375)
-
-[node name="leg-right" parent="Player2/Character/character/root" index="1"]
-transform = Transform3D(0.96592593, 0, -0.2588191, 0, 1, 0, 0.2588191, 0, 0.96592593, -0.125, 0.17625, -0.023750002)
-
-[node name="torso" parent="Player2/Character/character/root" index="2"]
-transform = Transform3D(1, 0, 0, 0, 0.996194, 0.08715568, 0, -0.08715568, 0.996194, -1.80478e-15, 0.17625, -0.02375)
-
-[node name="arm-left" parent="Player2/Character/character/root/torso" index="0"]
-transform = Transform3D(0.70710695, 0.70710695, 0, -0.70710695, 0.70710695, 0, 0, 0, 1, 0.3, 0.175, 0)
-
-[node name="arm-right" parent="Player2/Character/character/root/torso" index="1"]
-transform = Transform3D(0.70710695, -0.70710695, 0, 0.70710695, 0.70710695, 0, 0, 0, 1, -0.3, 0.1195, 0)
 
 [node name="Packages" type="Node3D" parent="."]
 
-[node name="box-large2" parent="Packages" instance=ExtResource("18_quxi6")]
+[node name="box-large2" parent="Packages" instance=ExtResource("18_i635o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.179348, 0.10000038, -1.8949068)
 
-[node name="box-long2" parent="Packages" instance=ExtResource("19_xsack")]
+[node name="box-long2" parent="Packages" instance=ExtResource("19_wuelk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7489398, 0.10000038, 8.31275)
 
-[node name="box-small2" parent="Packages" instance=ExtResource("20_w0282")]
+[node name="box-small2" parent="Packages" instance=ExtResource("20_vkja5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.567187, 0.099999905, -16.168198)
 
-[node name="box-wide2" parent="Packages" instance=ExtResource("21_ys0pm")]
+[node name="box-wide2" parent="Packages" instance=ExtResource("21_cascp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2837293, 0.10000038, -7.792226)
 
-[node name="box-large3" parent="Packages" instance=ExtResource("18_quxi6")]
+[node name="box-large3" parent="Packages" instance=ExtResource("18_i635o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.319503, 0.20000076, 7.734769)
 
-[node name="box-long3" parent="Packages" instance=ExtResource("19_xsack")]
+[node name="box-long3" parent="Packages" instance=ExtResource("19_wuelk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.746193, 0.20000076, 0.520524)
 
-[node name="box-small3" parent="Packages" instance=ExtResource("20_w0282")]
+[node name="box-small3" parent="Packages" instance=ExtResource("20_vkja5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8863616, 0.20000029, -7.8113194)
 
-[node name="box-wide3" parent="Packages" instance=ExtResource("21_ys0pm")]
+[node name="box-wide3" parent="Packages" instance=ExtResource("21_cascp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.194773, 0.20000076, -17.81591)
 
-[node name="box-wide4" parent="Packages" instance=ExtResource("21_ys0pm")]
+[node name="box-wide4" parent="Packages" instance=ExtResource("21_cascp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.338871, 0.099998474, 17.695963)
 
-[node name="box-small4" parent="Packages" instance=ExtResource("20_w0282")]
+[node name="box-small4" parent="Packages" instance=ExtResource("20_vkja5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2888268, 0.10000038, 16.743622)
 
-[node name="box-large4" parent="Packages" instance=ExtResource("18_quxi6")]
+[node name="box-large4" parent="Packages" instance=ExtResource("18_i635o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9489794, 0.099999905, 25.260218)
 
-[editable path="Player1"]
-[editable path="Player1/Character"]
+[node name="truck" parent="." instance=ExtResource("4_46e5v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4752312, 0.8087449, 7.132796)
+
+[editable path="Player"]
+[editable path="Player/Character"]
 [editable path="World/Houses/building-type-a2"]
 [editable path="World/Houses/building-type-b2"]
 [editable path="World/Houses/building-type-c2"]
@@ -342,5 +322,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9489794, 0.099999905, 25.26
 [editable path="World/Houses/building-type-i2"]
 [editable path="World/Houses/building-type-j2"]
 [editable path="World/Houses/building-type-k2"]
-[editable path="Player2"]
-[editable path="Player2/Character"]
